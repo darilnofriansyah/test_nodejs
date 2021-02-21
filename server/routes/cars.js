@@ -30,9 +30,10 @@ router.get('/:id', (req, res) => {
 
 //ADD CARS
 router.post('/add', (req, res) => {
-    const { description } = req.body;
+    const { description, type_id } = req.body;
     Cars.create({
-        description
+        description,
+        type_id
     })
     .then(cars => res.redirect('/cars'))
     .catch(err => console.log(err));
