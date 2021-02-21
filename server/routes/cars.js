@@ -8,7 +8,7 @@ router.get('/', (req, res) =>
     Cars.findAll()
         .then(cars => {
             console.log(cars);
-            res.sendStatus(200);
+            res.json({cars});
         })
         .catch(err => console.log(err))
 );
