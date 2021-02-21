@@ -36,7 +36,8 @@ CREATE TABLE cars(
 Run on command line
 ```bash
 npm install
-npm run serve
+npm run serve (on server folder)
+npm start (on client folder)
 ```
 
 Change the credential on config/db.js (hostname on developtment is localhost)
